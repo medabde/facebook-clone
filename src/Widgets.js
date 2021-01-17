@@ -11,9 +11,10 @@ function Widgets() {
             height="100%" 
             style={{border:"none",overflow:"hidden"}} 
             scrolling="no"
-            frameborder="0" 
-            allowfullscreen="true" 
-            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+            frameBorder="0" 
+            allowFullScreen={true} 
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+            ></iframe>
 
 
         </div>
