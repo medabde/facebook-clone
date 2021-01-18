@@ -1,7 +1,7 @@
 # Facebook clone made with React 
 
-Facebook landing page.
-Check it out at : https://facebook-clone-a2f66.web.app/
+Facebook landing page.  
+Check it out at : https://facebook-clone-a2f66.web.app/  
 
 ## Features :
 
