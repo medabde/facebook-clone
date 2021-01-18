@@ -1,13 +1,13 @@
 import { Button } from '@material-ui/core';
 import React from 'react';
 import './Login.css';
-import {auth,provider} from './firebase';
-import { useStateValue } from './StateProvider';
-import {actionTypes} from './reducer';
+import {auth,provider} from '../../firebase/firebase';
+import { useStateValue } from '../../context/StateProvider/StateProvider';
+import {actionTypes} from '../../context/Reducer/reducer';
 
 function Login() {
     const [state,dispatch] = useStateValue();
-    const guestPhotoURL = "https://img.icons8.com/fluent-systems-filled/96/000000/guest-male.png"
+    const guestPhotoURL = "https://img.icons8.com/ios-glyphs/96/4a90e2/user-male.png"
     const signIn = ()=>{
         // sign in
         auth.signInWithPopup(provider)

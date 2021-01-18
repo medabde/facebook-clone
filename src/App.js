@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import Header from './Header';
-import Sidebar from './Sidebar';
-import Feed from './Feed';
-import Widgets from './Widgets';
-import Login from './Login';
-import { useStateValue } from './StateProvider';
+import Header from './components/Header/Header';
+import Sidebar from './components/Sidebar/Sidebar';
+import Feed from './components/Feed/Feed';
+import Widgets from './components/Widgets/Widgets';
+import Login from './components/Login/Login';
+import { useStateValue } from './context/StateProvider/StateProvider';
 
 function App() {
   const [{user},dispatch] = useStateValue();

@@ -2,8 +2,8 @@ import { Avatar } from '@material-ui/core'
 import { InsertEmoticon, PhotoLibrary, Videocam } from '@material-ui/icons';
 import React,{useState} from 'react'
 import './MessageSender.css'
-import { useStateValue } from './StateProvider';
-import db from './firebase';
+import { useStateValue } from '../../../context/StateProvider/StateProvider';
+import db from '../../../firebase/firebase';
 import firebase from 'firebase';
 
 

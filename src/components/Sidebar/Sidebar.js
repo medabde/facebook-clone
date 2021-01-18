@@ -1,8 +1,8 @@
 import { Chat, EmojiFlags, ExpandMoreOutlined, LocalHospital, People, Storefront, VideoLibrary } from '@material-ui/icons'
 import React from 'react'
 import './Sidebar.css'
-import SidebarRow from './SidebarRow'
-import { useStateValue } from './StateProvider';
+import SidebarRow from './SidebarRow/SidebarRow'
+import { useStateValue } from '../../context/StateProvider/StateProvider';
 
 function Sidebar() {
     const [{user},dispatch] = useStateValue();
