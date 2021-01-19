@@ -16,13 +16,12 @@ import { useStateValue } from '../../context/StateProvider/StateProvider';
 
 
 function Header() {
-    const [{user},dispatch] = useStateValue();
+    const [{user},] = useStateValue();
     return (
         <div className="header">
             <div className="header__left">
-                <img src="https://1000logos.net/wp-content/uploads/2016/11/Facebook-logo-500x350.png" 
-                alt="" 
-                srcset=""/>
+                <img srcSet="https://1000logos.net/wp-content/uploads/2016/11/Facebook-logo-500x350.png" 
+                alt="" />
                 <div className="header__input">
                     <SearchIcon/>
                     <input type="text" placeholder="Search Facebook" />

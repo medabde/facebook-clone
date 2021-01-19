@@ -5,7 +5,7 @@ import SidebarRow from './SidebarRow/SidebarRow'
 import { useStateValue } from '../../context/StateProvider/StateProvider';
 
 function Sidebar() {
-    const [{user},dispatch] = useStateValue();
+    const [{user},] = useStateValue();
     return (
         <div className="sidebar">
             <SidebarRow src={user.photoURL} title={user.displayName}/>

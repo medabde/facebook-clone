@@ -8,7 +8,7 @@ import Login from './components/Login/Login';
 import { useStateValue } from './context/StateProvider/StateProvider';
 
 function App() {
-  const [{user},dispatch] = useStateValue();
+  const [{user},] = useStateValue();
 
   return (
     <div className="app">

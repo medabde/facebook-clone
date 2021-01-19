@@ -6,7 +6,7 @@ import { useStateValue } from '../../context/StateProvider/StateProvider';
 import {actionTypes} from '../../context/Reducer/reducer';
 
 function Login() {
-    const [state,dispatch] = useStateValue();
+    const [,dispatch] = useStateValue();
     const guestPhotoURL = "https://img.icons8.com/ios-glyphs/96/4a90e2/user-male.png"
     const signIn = ()=>{
         // sign in
@@ -16,7 +16,6 @@ function Login() {
                 type: actionTypes.SET_USER,
                 user: result.user,
             })
-            console.log(result.user);
         })
         .catch(error => alert(error.message))
     }

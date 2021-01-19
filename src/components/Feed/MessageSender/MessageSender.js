@@ -4,11 +4,11 @@ import React,{useState} from 'react'
 import './MessageSender.css'
 import { useStateValue } from '../../../context/StateProvider/StateProvider';
 import db from '../../../firebase/firebase';
-import firebase from 'firebase';
-
+import firebase from 'firebase/app';
+import 'firebase/firestore';
 
 function MessageSender() {
-    const [{user},dispatch] = useStateValue();
+    const [{user},] = useStateValue();
 
     const [input,setInput] = useState("");
     const [imageUrl, setimageUrl] = useState("");
